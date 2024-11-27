@@ -1,0 +1,411 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+  }
+  .logo {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .search-bar {
+    flex: 1;
+    margin: 0 10px;
+    display: flex;
+    gap: 5px;
+  }
+  .search-bar input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+  }
+  .search-bar button {
+    padding: 8px 12px;
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .menu {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Scrolling Posters */
+  .scrolling-posters {
+    display: flex;
+    justify-content: space-between;  /* Ensures posters are spaced evenly */
+    padding: 20px;  /* Adjust padding as needed */
+    overflow: hidden;  /* Hide any overflow, ensuring no scrollbars */
+  }
+  
+  .poster {
+    flex: 0 0 32%;  /* Display posters in 3 columns, adjusting to the screen width */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;  /* Optional: Add transition effect when hovering */
+  }
+  
+  .poster img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;  /* Ensure images cover the entire area of the poster */
+  }
+  
+  /* Optional: Add hover effect for poster interaction */
+  .poster:hover {
+    transform: scale(1.05);  /* Slight zoom-in effect on hover */
+  }
+  
+  
+  
+  /* Subjects Section */
+  .subjects {
+    padding: 15px;
+  }
+  .subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  .subject-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  .subject-card h3 {
+    margin-bottom: 10px;
+  }
+  .subject-card button {
+    display: block;
+    margin: 5px 0;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .subject-card button.download {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  .footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .column {
+    flex: 1;
+  }
+  .column h4 {
+    margin-bottom: 10px;
+  }
+  .column ul {
+    list-style: none;
+  }
+  .column ul li {
+    margin-bottom: 5px;
+  }
+  .social-icons i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .social-icons i:hover {
+    color: #4CAF50;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Welcome Section */
+  .welcome {
+    background-color: #4CAF50;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .welcome h1 {
+    font-size: 36px;
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose-us {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .feature-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .feature-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  /* Subjects Section */
+  .subjects {
+    background-color: #fafafa;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .subject-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .subject-item {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subject-item:hover {
+    background-color: #45a049;
+  }
+  
+  /* Key Features Section */
+  .key-features {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .feature-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 30%;
+  }
+  
+  /* How StudyNotes Helps You Succeed */
+  .how-we-help {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+  }
+  
+  .how-we-help ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .how-we-help ul li {
+    margin: 10px 0;
+  }
+  
+  /* Call to Action Section */
+  .cta {
+    background-color: #4CAF50;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .cta-button {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }/* Mobile Media Queries */
+@media screen and (max-width: 768px) {
+
+    /* Welcome Section */
+    .welcome h1 {
+      font-size: 24px;
+    }
+  
+    /* Feature Cards */
+    .feature-cards {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .feature-card {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    /* Subjects Section */
+    .subject-item {
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+    }
+  
+    /* Key Features Section */
+    .feature-cards {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .feature-card {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  
+    /* How StudyNotes Helps You Succeed */
+    .how-we-help ul {
+      padding-left: 0;
+    }
+  
+    .how-we-help ul li {
+      font-size: 16px;
+    }
+  
+    /* CTA Button */
+    .cta-button {
+      font-size: 16px;
+      padding: 12px 30px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+  
+    /* Welcome Section */
+    .welcome h1 {
+      font-size: 22px;
+    }
+  
+    /* Feature Cards */
+    .feature-card {
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+  
+    /* Subjects Section */
+    .subject-item {
+      font-size: 16px;
+      padding: 12px;
+    }
+  
+    /* Key Features Section */
+    .feature-card {
+      padding: 15px;
+      margin-bottom: 10px;
+    }
+  
+    /* How StudyNotes Helps You Succeed */
+    .how-we-help ul li {
+      font-size: 14px;
+    }
+  
+    /* CTA Section */
+    .cta-button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+    /*Scrolling posters*/
+    .scrolling-posters {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 10px 15px;
+      }
+      .poster {
+        flex: 0 0 80%;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .poster img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+  }
+  .view-more-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+    background-color: #45a049;
+}

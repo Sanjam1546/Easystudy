@@ -1,0 +1,193 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #4CAF50;
+}
+
+/* Subject Page Styling */
+.subject-page {
+  background-color: white;
+  padding: 40px 0;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.important-questions,
+.pdf-download,
+.topics {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.important-questions ul,
+.topics ul {
+  list-style: none;
+}
+
+.important-questions li,
+.topics li {
+  margin-bottom: 10px;
+}
+
+.important-questions a,
+.topics a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.important-questions a:hover,
+.topics a:hover {
+  color: #4CAF50;
+}
+
+/* Download Button */
+.download-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #45a049;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.column {
+  flex: 1;
+}
+.column h4 {
+  margin-bottom: 10px;
+}
+.column ul {
+  list-style: none;
+}
+.column ul li {
+  margin-bottom: 5px;
+}
+.social-icons i {
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+/* Responsive Design (For screens larger than 768px) */
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  .navbar .logo {
+    font-size: 24px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .important-questions a,
+  .topics a {
+    font-size: 20px;
+  }
+
+  .download-btn {
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 30px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-links ul {
+    display: flex;
+  }
+
+  .footer-links li {
+    margin-right: 20px;
+  }
+}
